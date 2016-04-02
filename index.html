@@ -56,15 +56,17 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
-          <img class="header" src="./images/md_site_logo.png">
+          <a href="#all" class="all">
+            <img class="header" src="./images/md_site_logo.png">
+          </a>
 
           <div class="nav">
-            <a class="blog-font" href="">blog</a>
-            <a class="furniture-font" href="">furniture</a>
-            <a class="interiors-font" href="">interiors</a>
-            <a class="jewelry-font" href="">jewelry</a>
-            <a class="textiles-font" href="">textiles</a>
-            <a class="ux-font" href="">ux/ui</a>
+            <a class="blog-font" href="#blog" data-filter>blog</a>
+            <a class="furniture-font" href="#furniture" data-filter>furniture</a>
+            <a class="interiors-font" href="#interiors" data-filter>interiors</a>
+            <a class="jewelry-font" href="#jewelry" data-filter>jewelry</a>
+            <a class="textiles-font" href="#textiles" data-filter>textiles</a>
+            <a class="ux-font" href="#ux" data-filter>ux/ui</a>
           </div>
         </div>
       </div>
@@ -154,5 +156,19 @@
         </div>
       </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function () {
+      $('[data-filter]').on('click', function () {
+        let project = $(this).attr('href').replace('#', '')
+        $('.project').addClass('hidden')
+        $('.' + project).removeClass('hidden')
+      })
+      $('.all').on('click', function () {
+        console.log('hi')
+        $('.project').removeClass('hidden')
+      })
+    })
+    </script>
   </body>
 </html>
