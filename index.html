@@ -51,6 +51,7 @@
     .logo {
       margin: 30px 0 0 0;
       width: 160px;
+      position: absolute;
     }
     
     a {
@@ -60,26 +61,48 @@
     a:hover {
       color: #000;
     }
+    
+    .social {
+      float: right;
+      margin: 80px 55px 0 0;
+    }
+    
+    .social img {
+      margin-left: 15px;
+    }
+
     </style>
   </head>
   <body>
     <div class="container">
+        
       <div class="row">
         <div class="col-sm-12">
-          <a href="#all" class="all">
+        
+          <a class="all" href="#all">
             <img class="logo" src="./images/md_logo-01.svg">
           </a>
+        
+          <div class="social">
+            <img src="./images/tumblr.png">
+            <img src="./images/instagram.png">
+            <img src="./images/twitter.png">
+          </div>
+        
+        </div>
+        <div class="col-sm-12">
           <div class="nav">
-            <a class="story-font" href="https://medium.com/@madeleinedavis/my-story-4fd9b5050067#.1a98a0byn" target="_blank">story</a></a>
+            <a class="story-font" href="https://medium.com/@madeleinedavis/my-story-4fd9b5050067#.1a98a0byn" target="_blank">story</a>
             <a class="blog-font" href="http://madeleinedvs.tumblr.com/" target="_blank">blog</a>
-            <a class="furniture-font" href="#furniture" data-filter>furniture</a>
-            <a class="interiors-font" href="#interiors" data-filter>interiors</a>
-            <a class="jewelry-font" href="#jewelry" data-filter>jewelry</a>
-            <a class="textiles-font" href="#textiles" data-filter>textiles</a>
-            <a class="ux-font" href="#ux" data-filter>ux/ui</a>
+            <a class="furniture-font" data-filter="" href="#furniture">furniture</a>
+            <a class="interiors-font" data-filter="" href="#interiors">interiors</a>
+            <a class="jewelry-font" data-filter="" href="#jewelry">jewelry</a>
+            <a class="textiles-font" data-filter="" href="#textiles">textiles</a>
+            <a class="ux-font" data-filter="" href="#ux">ux/ui</a>
           </div>
         </div>
       </div>
+
       <div class="row">
         <div class="col-sm-12">
           <a href="https://medium.com/@madeleinedavis/liddell-croquet-set-8a59fdeee892#.wxmjzqo6u">
