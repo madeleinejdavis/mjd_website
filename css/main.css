@@ -230,7 +230,7 @@ textarea {
 }
 a:hover {
     text-decoration: underline;
-    color: #000000;
+    color: #000000 !important;
 }
 
 a:active {
